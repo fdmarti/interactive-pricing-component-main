@@ -1,0 +1,15 @@
+.benefit {
+	font-size: 12px;
+	position: relative;
+	margin-left: 15px;
+}
+
+.benefit::before {
+	content: '';
+	position: absolute;
+	height: 10px;
+	width: 10px;
+	left: -20px;
+	top: 5px;
+	background: url('../../../public/images/icon-check.svg') no-repeat center;
+}

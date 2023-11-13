@@ -1,0 +1,144 @@
+.pricing-block {
+	background-color: var(--white);
+	padding: 50px 30px;
+	border-radius: 10px;
+	box-shadow: -1px -1px 43px -4px var(--grayshBlue);
+	max-width: 500px;
+	margin: 0 auto;
+	height: auto;
+	position: relative;
+	top: -40px;
+	color: var(--grayshBlue);
+}
+
+.page-views {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding-bottom: 20px;
+}
+
+.pageviews {
+	text-transform: uppercase;
+	font-size: 14px;
+	letter-spacing: 0.5px;
+	font-weight: 800;
+}
+
+.amount {
+	font-size: 32px;
+	font-weight: 800;
+	color: var(--darkBlue);
+}
+
+input[type='range'] {
+	appearance: none;
+	background: transparent;
+	cursor: pointer;
+	width: 100%;
+	height: 50px;
+}
+
+input[type='range']:focus {
+	outline: none;
+}
+
+input[type='range']::-webkit-slider-runnable-track {
+	background-color: var(--softCyan);
+	border-radius: 0.5rem;
+	height: 0.5rem;
+}
+
+input[type='range']::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	margin-top: -12px;
+	background: url('../../../public/images/icon-slider.svg') no-repeat center;
+	background-color: var(--strongCyan);
+	border-radius: 1.5rem;
+	height: 2rem;
+	width: 2rem;
+}
+
+input[type='range']::-moz-range-track {
+	background-color: var(--softCyan);
+	border-radius: 0.5rem;
+	height: 0.5rem;
+}
+
+input[type='range']::-moz-range-thumb {
+	background-color: var(--strongCyan);
+	border: none;
+	border-radius: 1.5rem;
+	height: 2rem;
+	width: 2rem;
+}
+
+input[type='range']:focus::-moz-range-thumb {
+	outline: 3px solid var(--strongCyan);
+	outline-offset: 0.125rem;
+}
+
+.billing-block {
+	display: flex;
+	margin: 20px auto;
+	justify-content: center;
+	gap: 1rem;
+	position: relative;
+	font-size: 14px;
+	align-items: center;
+}
+
+.trial-block {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 10px 0;
+}
+
+.benefits {
+	margin-top: 10px;
+	display: flex;
+	flex-direction: column;
+	gap: 0.4rem;
+}
+
+#switch {
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+#switch {
+	display: none;
+}
+
+label {
+	display: inline-block;
+	width: 40px;
+	height: 20px;
+	background-color: var(--strongCyan);
+	border-radius: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+label::before {
+	content: '';
+	position: absolute;
+	top: 2px;
+	left: 2px;
+	width: 16px;
+	height: 16px;
+	background-color: white;
+	border-radius: 50%;
+	transition: transform 0.3s;
+}
+
+#switch:checked + label {
+	background-color: var(--strongCyan);
+}
+
+#switch:checked + label::before {
+	transform: translateX(20px);
+}

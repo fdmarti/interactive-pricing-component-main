@@ -1,0 +1,16 @@
+.badge {
+	position: absolute;
+	right: 0;
+	color: var(--lightRed);
+	background-color: var(--lightRedBg);
+	padding: 5px 10px;
+	border-radius: 15px;
+	font-size: 13px;
+	font-weight: 800;
+}
+
+@media (max-width: 600px) {
+	.badge {
+		display: none;
+	}
+}

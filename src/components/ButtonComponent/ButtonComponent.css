@@ -1,0 +1,12 @@
+.btn {
+	padding: 10px 40px;
+	border: none;
+	border-radius: 15px;
+	color: var(--veryPaleBlue);
+	background-color: var(--darkBlue);
+}
+
+.btn:hover {
+    cursor: pointer;
+    background-color:var(--darkBlueHover);
+}

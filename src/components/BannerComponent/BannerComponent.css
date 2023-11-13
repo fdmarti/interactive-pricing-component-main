@@ -1,0 +1,53 @@
+.banner {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	gap: 0.9rem;
+	height: 400px;
+	background: url('../public/images/bg-pattern.svg') no-repeat right/cover;
+	z-index: -999;
+	position: relative;
+}
+
+.banner h1 {
+	color: var(--darkBlue);
+	position: relative;
+}
+
+.banner h1::after {
+	content: '';
+	display: inline;
+	position: absolute;
+	left: 0;
+	top: -30px;
+	height: 200px;
+	z-index: -1;
+	width: 100%;
+	background: url('../public/images/pattern-circles.svg') no-repeat
+		center/contain;
+}
+
+.banner p {
+	color: var(--grayshBlue);
+}
+
+@media (max-width: 600px) {
+	.banner {
+		height: 300px;
+	}
+
+	.banner h1 {
+		text-align: center;
+		font-size: 25px;
+	}
+
+	.banner h1::after {
+		height: 150px;
+	}
+
+	.banner p {
+		text-align: center;
+		font-size: 14px;
+	}
+}
